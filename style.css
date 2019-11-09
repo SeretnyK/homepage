@@ -1,0 +1,101 @@
+body {
+    background-image: url(Tłogłówne.jpg);
+}
+
+.mainHeader {
+    color: tomato;
+    background: rgba(182, 97, 97, 0.4);
+    filter: alpha(opacity=50);
+}
+
+.mainSection {
+    background: rgba(255, 255, 255, 0.5);
+    filter: alpha(opacity=50);
+}
+
+.diaryHeader {
+    color: #c3cc47;
+    font-size: 32px;
+}
+
+.sectionHeader {
+    color: #c3cc47;
+    font-size: 32px;
+}
+
+p {
+    color: #980319;
+}
+
+.everyfooter {
+    color: #252222;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.pamietniczek {
+    margin: auto;
+    background: rgba(255, 255, 255, 0.4);
+    filter: alpha(opacity=50);
+}
+
+.dniHeaders {
+    color: wheat;
+}
+
+.bodyDzien2-3 {
+    background-image: url(niebodzien2-3.jpg);
+}
+
+.mainDzien2-3 {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.stopkadzien2-3 {
+    background: #a5a0a0;
+}
+
+.gornypasek {
+    background: #a5a0a0;
+}
+
+.bodyDzien4-5 {
+    background-image: url(dzien3-4.jpg);
+    color: wheat;
+}
+
+.mainDzien4-5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: black
+}
+
+.podstronasection1 {
+    background: rgba(255, 255, 255, 0.5);
+    filter: aplha=(opacity(0.5));
+}
+
+.stopkapodstrony {
+    color: #980319;
+    text-align: center;
+}
+
+.Stronawbudowie {
+    background-color: #ffffff;
+    background-image: url("https://www.pecetowicz.pl/images/strona-w-budowie.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.bodyPodstrona {
+    background-image: url(tlopodstrona.jpg);
+}
+
+.headerPodstrona {
+    color: #746d18;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
