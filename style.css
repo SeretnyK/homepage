@@ -11,25 +11,31 @@ body {
 .mainSection {
     background: rgba(255, 255, 255, 0.5);
     filter: alpha(opacity=50);
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid #980319;
+    border-radius: 9px;
+  
 }
 
-.diaryHeader {
-    color: #c3cc47;
-    font-size: 32px;
-}
-
-.sectionHeader {
-    color: #c3cc47;
+.sectionHeader, .diaryHeader  {
+    color: #002b5c;
     font-size: 32px;
 }
 
 p {
     color: #980319;
+    padding-left: 16px;
 }
 
 .everyfooter {
     color: #252222;
     background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    border-radius: 6px;
+    border: 1px dashed #980319;
 }
 
 .pamietniczek {
@@ -49,7 +55,9 @@ p {
 .mainDzien2-3 {
     color: red;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
 }
 
 .stopkadzien2-3 {
@@ -80,7 +88,10 @@ a {
 
 .stopkapodstrony {
     color: #980319;
-    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    border-radius: 6px;
 }
 
 .Stronawbudowie {
@@ -98,4 +109,8 @@ a {
 .headerPodstrona {
     color: #746d18;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thirdHeader {
+    color: #195281
 }
