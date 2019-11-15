@@ -3,22 +3,17 @@ body {
 }
 
 .mainHeader {
-    color: tomato;
+    color: #d1f508fa;
     background: rgba(182, 97, 97, 0.4);
     filter: alpha(opacity=50);
-}
-
-.mainSection {
-    background: rgba(255, 255, 255, 0.5);
-    filter: alpha(opacity=50);
     width: 100%;
-    max-width: 700px;
-    border: 3px solid #980319;
-    border-radius: 9px;
-  
+    max-width: 900px;
+    border: 3px dashed #980319;
+    border-radius: 6px;
+    margin: 32px auto;
 }
 
-.sectionHeader, .diaryHeader  {
+.sectionHeader, .diaryHeader {
     color: #002b5c;
     font-size: 32px;
 }
@@ -38,10 +33,14 @@ p {
     border: 1px dashed #980319;
 }
 
-.pamietniczek {
-    margin: auto;
+.pamietniczek, .mainSection {
+    margin: 32px auto;
     background: rgba(255, 255, 255, 0.4);
     filter: alpha(opacity=50);
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid #980319;
+    border-radius: 9px;
 }
 
 .dniHeaders {
@@ -83,7 +82,6 @@ a {
 
 .podstronasection1 {
     background: rgba(255, 255, 255, 0.5);
-    filter: aplha=(opacity(0.5));
 }
 
 .stopkapodstrony {
