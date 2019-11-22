@@ -1,5 +1,5 @@
-body {
-    background-image: url(Tłogłówne.jpg);
+.body {
+    background:rgb(56, 42, 82);
     margin: 0px;
 }
 
@@ -7,7 +7,7 @@ body {
     padding-top: 30px;
 }
 
-.mainHeader {
+.heading {
     color: #d1f508fa;
     background: rgba(182, 97, 97, 0.4);
     width: 100%;
@@ -18,66 +18,76 @@ body {
     text-align: center;
 }
 
-.mainSection {
+.about {
     margin: 32px auto;
     background: rgba(255, 255, 255, 0.4);;
     width: 100%;
-    max-width: 700px;
-    border: 3px solid #980319;
+    max-width: 570px;
+    border-bottom:3px solid #980319;
+    border-top: 3px solid #980319;
     border-radius: 9px;
 }
 
-.sectionHeader, .diaryHeader {
+.about__header {
     color: #002b5c;
     font-size: 32px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-p {
+.diary__header {
+    color: #002b5c;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.p {
     color: #980319;
     padding-left: 16px;
     overflow: hidden;
 }
 
-.everyfooter {
+.footer {
     color: #252222;
     background: rgba(255, 255, 255, 0.4);
     width: 100%;
-    max-width: 700px;
+    max-width: 570px;
     margin: 32px auto;
     border-radius: 6px;
     border: 1px dashed #980319;
 }
 
-.pamietniczek {
+.diary {
     margin: 32px auto;
     background: rgba(255, 255, 255, 0.4);
     filter: alpha(opacity=50);
     width: 100%;
-    max-width: 700px;
-    border: 3px solid #980319;
+    max-width: 570px;
+    border-bottom:3px solid #980319;
+    border-top: 3px solid #980319;
     border-radius: 9px;
 }
 
-.dniHeaders {
+.article__dzien2-3-headers {
     color: wheat;
 }
 
-.bodyDzien2-3 {
-    background-image: url(niebodzien2-3.jpg);
+.body__dzien2-3 {
+    background:rgb(56, 42, 82);
+    margin: 0px;
 }
 
-.mainDzien2-3 {
+.main__dzien2-3 {
+    padding-top: 30px;
+}
+
+.article__dzien2-3 {
     color: red;
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
-    max-width: 700px;
+    max-width: 570px;
     margin: 32px auto;
-}
-
-.stopkadzien2-3 {
-    background: #a5a0a0;
+    text-align: center;
 }
 
 
@@ -101,7 +111,7 @@ a {
 .stopkapodstrony {
     color: #980319;
     width: 100%;
-    max-width: 700px;
+    max-width: 570px;
     margin: 32px auto;
     border-radius: 6px;
 }
@@ -123,7 +133,7 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.thirdHeader {
+.diary__subheading {
     color: #195281;
     margin-bottom: 10px;
     margin-top: 10px;

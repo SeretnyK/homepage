@@ -9,3 +9,12 @@ console.log(age);
 console.log(`Nazywam się ${name} i mam ${age} lat`);
 
 console.log('Witaj 👌');
+
+const heading = document.querySelector('.heading');
+
+console.log(heading);
+
+const paragraphs = document.querySelectorAll('.p');
+
+console.log(paragraphs);
+console.log(paragraphs[0]);
