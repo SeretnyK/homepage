@@ -18,3 +18,10 @@ const paragraphs = document.querySelectorAll('.p');
 
 console.log(paragraphs);
 console.log(paragraphs[0]);
+
+
+const paragraph__js = document.querySelector('.paragraph__js')
+
+console.log(paragraph__js.innerHTML)
+
+paragraph__js.innerHTML = `Nazywam się <strong>${name}</strong> i mam<strong> ${age}</strong> lat`
