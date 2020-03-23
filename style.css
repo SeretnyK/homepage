@@ -21,6 +21,24 @@
     text-align: center;
 }
 
+.heading__button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 260px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.heading__button2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 260px;
+    margin: 0px auto;
+    text-align: center;
+}
+
 .about {
     margin: 32px auto;
     background: rgba(255, 255, 255, 0.4);
