@@ -12,9 +12,13 @@
 
 
 <body class="body">
-  <header class="navigation">
-    <a href="index.html">Strona główna</a>
-    <a href="podstrona.html">Podstrona</a>
+  <header class="main__header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html">Strona główna </a></li>
+        <li class="navigation__item"><a href="podstrona.html">Podstrona </a></li>
+      </ul>
+    </nav>
   </header>
   <main class="main" id="top">
     <header>
@@ -25,16 +29,21 @@
     <section class="about">
       <h2 class="about__header">Co to jest?</h2>
       <p class="p">
-        <img src="pansestocka.jpg" alt="zdjecie śmiesznego pana ze stoka" class="panzestocka"/>
+        <img src="pansestocka.jpg" alt="zdjecie śmiesznego pana ze stoka" class="panzestocka" />
         Jest to moje drugie(bez pomocy) podejscie do zrobienia strony internetowej w rozszerzeniu html<br><br>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum aliquam repellat non quam quasi deleniti?
         Tenetur reprehenderit eligendi saepe minus veritatis. Eligendi neque, deserunt minima consectetur
         dignissimo eaque cupiditate dolor.
         <a href="#diary">Przejdź do pamiętniczka</a>
       </p>
-      <p class="p paragraph__js">
-
-      </p>
+      <p class="p paragraph__js"></p>
+      <section class="hobby">
+        <ul>
+          <li>ogladanie</li>
+          <li>spotkania</li>
+          <li>spanie</li>
+        </ul>
+      </section>
     </section>
     <section class="JS__section">
       <p class="JS__paragraphs">
@@ -43,38 +52,40 @@
     </section>
     <section class="diary" id="diary">
       <h2 class="diary__header">Pamiętniczek</h2>
-      <section>
-        <h3 class="diary__subheading">Jak stworzyc prawidłowego HTML-a? </h3>
-        <p class="p">Tworzenie zgodnego ze standardami html-a to sztuka,która do perfekcji opanowało niewielu. Jeśli
-          chcesz stać się częscią tej grupy, musisz wykazać się otwartą głową i dużą iloscią wolnego czasu...<br>
-          <a href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
-        </p>
-      </section>
-      <section>
-        <h3 class="diary__subheading">Czy nagrywanie szkolenia to prosta sprawa?
-        </h3>
-        <p class="p">Na początku myślałem,że całe szkolenie nagram w 2 tygodnie(o ja naiwny). Samo planowanie rzeczy
-          zajęło dużo wiecej! Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi sie wytworzyć
-          schemat nagrywania,który każdego dnia przybliża
-          mnie do skończenia pracy.
-        </p>
-      </section>
-      <section>
-        <h3 class="diary__subheading diary__subheading--firstday">Pierwszy dzień html.</h3>
-        <p class="p">Wczoraj kupiłem zeszyt do rozpisywa zaczników html/css/javascript żeby to lepiej zapamiętywać. Po
-          pracy od razu wziąłem sie do działania, </p>
-      </section>
-      <section>
-        <h3 class="diary__subheading">
-          Dzień 2-3 HTML-a!
-          <a href="dzien2-3.html"><img src="dalej.gif" alt="kliknij tu by przejść do tej strony"></a>
-          Dzień 4-5.
-          <a href="dzien4-5.html"><img src="dalej.gif" alt="kliknij tu by przejść do tej strony"></a>
-          Dzień 6-7.
-          <a href="dzien6-7.html"><img src="dalej.gif" alt="kliknij tu by przejść do tej strony"></a>
-        </h3>
-
-      </section>
+      <div class="grid">
+        <section class="article__no1">
+          <h3 class="diary__subheading">Jak stworzyc prawidłowego HTML-a? </h3>
+          <p class="p">Tworzenie zgodnego ze standardami html-a to sztuka,która do perfekcji opanowało niewielu. Jeśli
+            chcesz stać się częscią tej grupy, musisz wykazać się otwartą głową i dużą iloscią wolnego czasu...<br>
+            <a class="diary__article--link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+          </p>
+        </section>
+        <section class="article__no2">
+          <h3 class="diary__subheading">Czy nagrywanie szkolenia to prosta sprawa?
+          </h3>
+          <p class="p">Na początku myślałem,że całe szkolenie nagram w 2 tygodnie(o ja naiwny). Samo planowanie rzeczy
+            zajęło dużo wiecej! Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi sie wytworzyć
+            schemat nagrywania,który każdego dnia przybliża
+            mnie do skończenia pracy.
+          </p>
+        </section>
+        <section class="article__no3">
+          <h3 class="diary__subheading diary__subheading--firstday">Pierwszy dzień html.</h3>
+          <p class="p">Wczoraj kupiłem zeszyt do rozpisywa zaczników html/css/javascript żeby to lepiej zapamiętywać. Po
+            pracy od razu wziąłem sie do działania, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            soluta aut explicabo. </p>
+        </section>
+        <section class="article__links">
+          <h3 class="diary__subheading">
+            Dzień 2-3 HTML-a!
+            <a href="dzien2-3.html"><img src="dalej.gif" alt="kliknij tu by przejść do tej strony"></a>
+            Dzień 4-5.
+            <a href="dzien4-5.html"><img src="dalej.gif" alt="kliknij tu by przejść do tej strony"></a>
+            Dzień 6-7.
+            <a href="dzien6-7.html"><img src="dalej.gif" alt="kliknij tu by przejść do tej strony"></a>
+          </h3>
+        </section>
+      </div>
     </section>
 
   </main>

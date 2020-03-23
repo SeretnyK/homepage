@@ -1,7 +1,8 @@
 /*idnex.html*/
 
 .body {
-    background: rgb(56, 42, 82);
+    background: rgb(178, 66, 252);
+    background: linear-gradient(0deg, rgba(178, 66, 252, 1) 0%, rgba(126, 0, 163, 1) 100%);
     margin: 0px;
 }
 
@@ -23,7 +24,6 @@
 .about {
     margin: 32px auto;
     background: rgba(255, 255, 255, 0.4);
-    ;
     width: 100%;
     max-width: 570px;
     border-bottom: 3px solid #980319;
@@ -38,11 +38,16 @@
     margin-bottom: 10px;
 }
 
+.diary__article--link {
+    text-decoration: none;
+}
+
 .diary__header {
     color: #002b5c;
     font-size: 32px;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .diary {
@@ -60,18 +65,17 @@
     color: #195281;
     margin-bottom: 10px;
     margin-top: 10px;
-}
-.diary__subheading--firstday {
-    color: aquamarine;
+    text-align: center;
 }
 
-.top {
+.diary__subheading--firstday .top {
     position: fixed;
     bottom: 10px;
     right: 10px;
     color: #1A936F;
     text-decoration: none;
 }
+
 /*--------------general-------------*/
 
 .p {
@@ -94,13 +98,30 @@ a {
     color: wheat
 }
 
-.navigation {
+.main__header {
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
+    padding: 0px;
     background: #000000;
 }
+
+.navigation__list {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__item {
+    display: block;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
 /*-------dzien2-3.html----------*/
 
 .dzien2-3__article--header {
@@ -202,4 +223,58 @@ a {
     max-width: 200px;
     display: block;
     float: left
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "top top2" "bottom bottom" "nav nav";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.article__no1 {
+    grid-area: top;
+}
+
+.article__no2 {
+    grid-area: top2;
+}
+
+.article__no3 {
+    grid-area: bottom;
+}
+
+.article__links {
+    grid-area: nav;
+}
+
+@media (max-width:640px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "top" "top2" "bottom" "nav";
+    }
+    .diary__article--link {
+        color: black;
+    }
+    .article__no1 {
+        grid-area: top;
+    }
+    .article__no2 {
+        grid-area: top2;
+    }
+    .article__no3 {
+        grid-area: bottom;
+    }
+    .article__links {
+        grid-area: nav;
+    }
 }

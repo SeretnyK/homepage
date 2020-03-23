@@ -1,8 +1,8 @@
-console.log('Siema, wiedze że patrzysz w konsole! 😊');
+console.log('Siema, widze że patrzysz w konsole! 😊');
 const name='Kacper Seretny';
 const age= '75';
 let kacper = null;
-console.log(name);
+console.log(name,age);
 console.log(age);
 
 
@@ -25,7 +25,7 @@ paragraph__js.innerHTML = `Nazywam się <strong>${name}</strong> i mam<strong> $
 
 if (age < 20) {
     console.log('masz mniej niż 20 lat');
-} else if ((age >=20 && (age <=30))) {
+} else if ((age >=20 && age <=30)) {
     console.log('masz wiecej niż 20 lat ale mniej niż 30')
 } else {
 console.log('jesteś 31+');
@@ -71,8 +71,19 @@ calculate(1);
 console.log(calculate(2));
 const myCalculation = calculate(4);
 console.log(myCalculation);
-
+  
 
 const calculateFat = x => (x+3)*7;
 
-console.log(calculateFat(2))
+console.log(calculateFat(2)) 
+
+const welcome = (imie, wiek) => {
+  console.log(`Witaj ${imie}, masz ${wiek} lat!`);
+}
+
+//welcome('maciek', 31)
+
+const imie = `maciek`
+const wiek = `31`
+
+welcome(imie,wiek);
