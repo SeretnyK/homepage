@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.heading__red {
+    color: red;
+}
+
 .heading__button {
     display: flex;
     justify-content: center;
@@ -122,6 +126,7 @@ a {
     box-sizing: border-box;
     padding: 0px;
     background: #000000;
+    z-index: 10;
 }
 
 .navigation__list {
@@ -137,6 +142,10 @@ a {
 .navigation__item {
     display: block;
     margin: 0 16px;
+    text-decoration: none;
+}
+
+.navigation__link {
     text-decoration: none;
 }
 
@@ -294,5 +303,35 @@ html {
     }
     .article__links {
         grid-area: nav;
+    }
+    .navigation__list {
+        flex-direction: column;
+        display: none;
+        font-size: medium;
+        text-decoration: none;
+    }
+
+    .navigation__item {
+        margin: 16px;
+    }
+    .navigation__switcher{
+        border: none;
+        background: none;
+        color: wheat;
+        position: absolute;
+        right: 16px;
+        top: 18px;
+    }
+    .navigation__list--visible {
+        display: flex;
+    }
+    .main__header{
+        min-height: 50px;
+    }
+}
+
+@media (min-width: 641px){
+    .navigation__switcher{
+        display: none;
     }
 }

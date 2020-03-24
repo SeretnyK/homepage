@@ -119,6 +119,20 @@ console.log(button3)
 button3.addEventListener('click',(e) => {
   const header = document.querySelector('.heading__js')
   header.innerHTML = 'klik, klik'
+  header.classList.toggle('heading__red')
+  if (header.classList.contains('heading__red')) {
+    console.log('jest klasa')
+  } else {
+    console.log('brak klasy')
+  }
   alert('po przycisnieciu zmieni sie nagłówek')
 });
 
+//MENU NAWIGACJA
+
+const menuSwitcher = document.querySelector('.navigation__switcher--js')
+
+menuSwitcher.addEventListener('click', (e) => {
+  const menuList = document.querySelector('.navigation__list--js')
+  menuList.classList.toggle('navigation__list--visible')
+})
